@@ -1,0 +1,12 @@
+node_modules/
+playwright-report/
+test-results/
+.playwright/
+.claude/
+.env
+.env.*
+!.env.example
+config.local.js
+.DS_Store
+Thumbs.db
+*.log
