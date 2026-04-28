@@ -3,6 +3,9 @@ playwright-report/
 test-results/
 .playwright/
 .claude/
+.playwright-mcp/
+my-*.jpg
+ref-*.jpg
 .env
 .env.*
 !.env.example
