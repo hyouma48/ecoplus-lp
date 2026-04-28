@@ -23,6 +23,8 @@
   --c-bg: #FFFFFF;
   --c-bg-yellow: #F9F8EF;
   --c-bg-gray: #F4F4F4;
+  --c-bg-pink: #FCEEF1;
+  --c-bg-beige: #FBF6EC;
   --c-text: #333333;
   --c-text-mute: #666666;
   --c-border: #E1E7EE;
@@ -335,6 +337,8 @@ small { font-size: 0.78em; color: var(--c-text-mute); }
 .section--yellow { background: var(--c-bg-yellow); }
 .section--gray   { background: var(--c-bg-gray); }
 .section--cyan   { background: var(--c-primary-light); }
+.section--pink   { background: var(--c-bg-pink); }
+.section--beige  { background: var(--c-bg-beige); }
 
 /* Wave divider — place at top or bottom of a section */
 .divider-wave-top, .divider-wave-bottom {
@@ -982,6 +986,145 @@ small { font-size: 0.78em; color: var(--c-text-mute); }
 .one-callout__body { text-align: center; }
 @media (min-width: 700px) {
   .one-callout__body { text-align: left; }
+}
+
+/* ============== Speech bubble heading ============== */
+.bubble-heading {
+  background: #fff;
+  border: 3px solid var(--c-pink);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  text-align: center;
+  margin: 0 auto 24px;
+  position: relative;
+  max-width: 760px;
+  font-size: clamp(20px, 4.6vw, 30px);
+  font-weight: 900;
+  color: var(--c-text);
+  line-height: 1.5;
+}
+.bubble-heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid var(--c-pink);
+}
+.bubble-heading::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #fff;
+  z-index: 1;
+}
+.bubble-heading .hl-yellow {
+  background: linear-gradient(transparent 60%, var(--c-yellow) 60%);
+  padding: 0 4px;
+}
+.bubble-heading .accent-pink { color: var(--c-pink-deep); }
+
+/* ============== Bracketed question heading ============== */
+.bracket-heading {
+  position: relative;
+  display: inline-block;
+  padding: 10px 36px;
+  font-size: clamp(20px, 4.4vw, 28px);
+  font-weight: 900;
+  line-height: 1.4;
+  color: var(--c-text);
+}
+.bracket-heading::before, .bracket-heading::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 22px;
+  border: 3px solid var(--c-pink-deep);
+}
+.bracket-heading::before {
+  left: 0;
+  border-right: none;
+  border-radius: 14px 0 0 14px;
+}
+.bracket-heading::after {
+  right: 0;
+  border-left: none;
+  border-radius: 0 14px 14px 0;
+}
+.bracket-heading .hl-yellow {
+  background: linear-gradient(transparent 60%, var(--c-yellow) 60%);
+  padding: 0 4px;
+}
+.bracket-heading .accent-pink { color: var(--c-pink-deep); }
+
+/* ============== Pink problem list ============== */
+.problems--pink {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  border: 2px solid var(--c-pink);
+  max-width: 720px;
+  display: block;
+}
+.problems--pink li {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--c-border);
+  font-weight: 700;
+  background: transparent;
+  border-radius: 0;
+  border-left: none; border-right: none;
+  border-top: none;
+}
+.problems--pink li:last-child { border-bottom: none; }
+.problems--pink .problems__check {
+  background: var(--c-pink);
+}
+
+/* ============== All-genre dense list ============== */
+.allgenre {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  border-left: 6px solid var(--c-primary);
+  box-shadow: var(--shadow-sm);
+  max-width: 880px;
+  margin: 0 auto;
+}
+.allgenre__title {
+  font-size: clamp(18px, 4vw, 24px);
+  font-weight: 900;
+  color: var(--c-primary-deep);
+  margin: 0 0 12px;
+  text-align: center;
+}
+.allgenre__title .hl-yellow {
+  background: linear-gradient(transparent 60%, var(--c-yellow) 60%);
+  padding: 0 4px;
+}
+.allgenre__list {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--c-text);
+  margin: 0;
+  text-align: center;
+}
+.allgenre__list span {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 2px 2px;
+  background: var(--c-bg-gray);
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 /* ============== Trust badges ============== */
