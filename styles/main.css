@@ -215,22 +215,16 @@ small { font-size: 0.78em; color: var(--c-text-mute); }
 }
 .hero__pills .pink { color: var(--c-pink); }
 
-/* Photo placeholder (will hold actual buyback scene photo later) */
+/* Hero photo */
 .hero__visual { display: flex; justify-content: center; margin: 6px 0 14px; position: relative; }
-.photo-frame {
-  background: rgba(255,255,255,0.18);
-  border: 2px dashed rgba(255,255,255,0.55);
-  border-radius: var(--radius-lg);
+.hero__photo {
   width: min(320px, 80vw);
-  aspect-ratio: 4 / 3;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.85);
-  font-weight: 700;
-  text-align: center;
-  padding: 14px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+  border: 4px solid #fff;
 }
-.photo-frame__icon { font-size: 38px; line-height: 1; margin-bottom: 6px; }
-.photo-frame__hint { font-size: 12px; opacity: .85; }
 
 /* No.1 laurel-style badge */
 .no1-badge {
@@ -427,6 +421,17 @@ small { font-size: 0.78em; color: var(--c-text-mute); }
   border-radius: 50%; background: var(--c-primary); color: #fff;
   display: inline-flex; align-items: center; justify-content: center;
   font-weight: 900;
+}
+.problems__photo {
+  max-width: 480px;
+  margin: 22px auto 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 16 / 10;
+}
+.problems__photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
 }
 .problems__solve {
   text-align: center;
@@ -925,6 +930,28 @@ small { font-size: 0.78em; color: var(--c-text-mute); }
   margin-top: 10px;
   font-size: 13px;
   color: var(--c-text);
+}
+
+.one-callout--with-photo .one-callout__inner {
+  display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center;
+}
+@media (min-width: 700px) {
+  .one-callout--with-photo .one-callout__inner { grid-template-columns: 220px 1fr; gap: 22px; }
+}
+.one-callout__photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  max-width: 220px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-sm);
+}
+.one-callout__photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.one-callout__body { text-align: center; }
+@media (min-width: 700px) {
+  .one-callout__body { text-align: left; }
 }
 
 /* ============== Footer ============== */
