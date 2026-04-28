@@ -200,18 +200,18 @@
     <h2 class="section__title">買取強化中の<span class="hl-yellow">アイテム</span></h2>
     <p class="section__lead">下記以外もご相談ください。1点からでも、トラック1台分でも対応いたします。<br /><small>※ 目標値の表示です。</small></p>
     <ul class="items">
-      <li class="items__item"><span class="items__icon" aria-hidden="true">📺</span>家電</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🛋️</span>家具</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">👜</span>ブランド</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">⌚</span>時計・宝飾</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🎸</span>楽器</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🚲</span>自転車</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🍳</span>厨房機器</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🛠️</span>工具</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🎮</span>ゲーム</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">📷</span>カメラ</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">🪑</span>骨董品</li>
-      <li class="items__item"><span class="items__icon" aria-hidden="true">📦</span>その他</li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-tv.jpg" alt="テレビ買取のイメージ" loading="lazy" /></div><span class="items__label">家電</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-sofa.jpg" alt="ソファ・家具買取のイメージ" loading="lazy" /></div><span class="items__label">家具</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-bag.jpg" alt="ブランドバッグ買取のイメージ" loading="lazy" /></div><span class="items__label">ブランド</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-watch.jpg" alt="腕時計・宝飾買取のイメージ" loading="lazy" /></div><span class="items__label">時計・宝飾</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-guitar.jpg" alt="楽器買取のイメージ" loading="lazy" /></div><span class="items__label">楽器</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-bike.jpg" alt="自転車買取のイメージ" loading="lazy" /></div><span class="items__label">自転車</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-kitchen.jpg" alt="厨房機器買取のイメージ" loading="lazy" /></div><span class="items__label">厨房機器</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-tools.jpg" alt="工具買取のイメージ" loading="lazy" /></div><span class="items__label">工具</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-game.jpg" alt="ゲーム買取のイメージ" loading="lazy" /></div><span class="items__label">ゲーム</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-camera.jpg" alt="カメラ買取のイメージ" loading="lazy" /></div><span class="items__label">カメラ</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-antique.jpg" alt="骨董品買取のイメージ" loading="lazy" /></div><span class="items__label">骨董品</span></li>
+      <li class="items__item"><div class="items__photo"><img src="assets/img/photo/item-box.jpg" alt="その他買取のイメージ" loading="lazy" /></div><span class="items__label">その他</span></li>
     </ul>
 
     <div style="text-align:center; margin: 32px 0 16px;">
@@ -223,15 +223,15 @@
 
     <div class="vehicles">
       <div class="vehicle">
-        <div class="vehicle__circle" aria-label="自転車（写真は後日差し替え）">🚲</div>
+        <div class="vehicle__circle"><img src="assets/img/photo/item-bike.jpg" alt="自転車買取のイメージ" loading="lazy" /></div>
         <span class="vehicle__label">自転車</span>
       </div>
       <div class="vehicle vehicle--pink">
-        <div class="vehicle__circle" aria-label="バイク（写真は後日差し替え）">🏍️</div>
+        <div class="vehicle__circle"><img src="assets/img/photo/vehicle-motorcycle.jpg" alt="バイク買取のイメージ" loading="lazy" /></div>
         <span class="vehicle__label">バイク</span>
       </div>
       <div class="vehicle vehicle--green">
-        <div class="vehicle__circle" aria-label="自動車（写真は後日差し替え）">🚗</div>
+        <div class="vehicle__circle"><img src="assets/img/photo/vehicle-car.jpg" alt="自動車買取のイメージ" loading="lazy" /></div>
         <span class="vehicle__label">自動車</span>
       </div>
     </div>
@@ -263,44 +263,68 @@
     <h2 class="section__title">買取実績<small class="section__title-note">※ サンプル表示</small></h2>
     <div class="cases" role="list">
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>45,000</div>
-        <div class="case__item">4Kテレビ（55インチ）</div>
-        <div class="case__meta">千葉県柏市・40代男性／引越しに伴う買取</div>
+        <div class="case__photo"><img src="assets/img/photo/item-tv.jpg" alt="4Kテレビ買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>45,000</div>
+          <div class="case__item">4Kテレビ（55インチ）</div>
+          <div class="case__meta">千葉県柏市・40代男性／引越しに伴う買取</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>120,000</div>
-        <div class="case__item">ハイブランド腕時計</div>
-        <div class="case__meta">埼玉県春日部市・60代男性／買い替えに伴う売却</div>
+        <div class="case__photo"><img src="assets/img/photo/item-watch.jpg" alt="腕時計買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>120,000</div>
+          <div class="case__item">ハイブランド腕時計</div>
+          <div class="case__meta">埼玉県春日部市・60代男性／買い替えに伴う売却</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>38,000</div>
-        <div class="case__item">ドラム式洗濯乾燥機</div>
-        <div class="case__meta">茨城県取手市・30代女性／買い替えに伴う買取</div>
+        <div class="case__photo"><img src="assets/img/photo/case-washer.jpg" alt="洗濯乾燥機買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>38,000</div>
+          <div class="case__item">ドラム式洗濯乾燥機</div>
+          <div class="case__meta">茨城県取手市・30代女性／買い替えに伴う買取</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>210,000</div>
-        <div class="case__item">一軒丸ごと家財整理</div>
-        <div class="case__meta">栃木県小山市・50代女性／遺品整理</div>
+        <div class="case__photo"><img src="assets/img/photo/item-box.jpg" alt="家財整理のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>210,000</div>
+          <div class="case__item">一軒丸ごと家財整理</div>
+          <div class="case__meta">栃木県小山市・50代女性／遺品整理</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>18,500</div>
-        <div class="case__item">エレキギター + アンプ</div>
-        <div class="case__meta">千葉県松戸市・20代男性／断捨離</div>
+        <div class="case__photo"><img src="assets/img/photo/item-guitar.jpg" alt="エレキギター買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>18,500</div>
+          <div class="case__item">エレキギター + アンプ</div>
+          <div class="case__meta">千葉県松戸市・20代男性／断捨離</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>62,000</div>
-        <div class="case__item">業務用厨房機器セット</div>
-        <div class="case__meta">埼玉県越谷市・店舗閉店に伴う買取</div>
+        <div class="case__photo"><img src="assets/img/photo/item-kitchen.jpg" alt="厨房機器買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>62,000</div>
+          <div class="case__item">業務用厨房機器セット</div>
+          <div class="case__meta">埼玉県越谷市・店舗閉店に伴う買取</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>9,800</div>
-        <div class="case__item">電動アシスト自転車</div>
-        <div class="case__meta">茨城県つくば市・30代男性／買い替え</div>
+        <div class="case__photo"><img src="assets/img/photo/item-bike.jpg" alt="電動アシスト自転車買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>9,800</div>
+          <div class="case__item">電動アシスト自転車</div>
+          <div class="case__meta">茨城県つくば市・30代男性／買い替え</div>
+        </div>
       </article>
       <article class="case" role="listitem">
-        <div class="case__price"><span class="yen">¥</span>73,000</div>
-        <div class="case__item">ブランドバッグ複数点</div>
-        <div class="case__meta">千葉県市川市・50代女性／生前整理</div>
+        <div class="case__photo"><img src="assets/img/photo/item-bag.jpg" alt="ブランドバッグ買取のイメージ" loading="lazy" /></div>
+        <div class="case__body">
+          <div class="case__price"><span class="yen">¥</span>73,000</div>
+          <div class="case__item">ブランドバッグ複数点</div>
+          <div class="case__meta">千葉県市川市・50代女性／生前整理</div>
+        </div>
       </article>
     </div>
     <p class="case__note"><small>※ 上記は架空のサンプル事例です。買取金額は商品の状態・付属品・市場相場により変動します。</small></p>
@@ -572,6 +596,38 @@
       <h3 class="thanks__title">送信完了しました</h3>
       <p>お問い合わせありがとうございます。担当より折り返しご連絡いたします。</p>
     </div>
+  </div>
+</section>
+
+<!-- Trust badges (generic, original) -->
+<section class="section">
+  <div class="container">
+    <span class="section__title-eyebrow">SAFE &amp; SECURE</span>
+    <h2 class="section__title">エコプラス+の<span class="accent-cyan">安心ポイント</span></h2>
+    <p class="section__lead">業界水準に基づく適正な運営を心がけ、お客様に安心してお任せいただける体制を整えています。</p>
+    <div class="trust-badges">
+      <div class="trust">
+        <div class="trust__icon" aria-hidden="true">📜</div>
+        <h3 class="trust__title">古物商許可取得</h3>
+        <p class="trust__sub">公安委員会による正式な許可</p>
+      </div>
+      <div class="trust">
+        <div class="trust__icon" aria-hidden="true">🛡️</div>
+        <h3 class="trust__title">遺品整理士在籍</h3>
+        <p class="trust__sub">有資格者によるご対応</p>
+      </div>
+      <div class="trust">
+        <div class="trust__icon" aria-hidden="true">⭐</div>
+        <h3 class="trust__title">高評価を目指して</h3>
+        <p class="trust__sub">丁寧な対応・公正な査定</p>
+      </div>
+      <div class="trust">
+        <div class="trust__icon" aria-hidden="true">💰</div>
+        <h3 class="trust__title">明朗な料金体系</h3>
+        <p class="trust__sub">出張・査定・キャンセル0円</p>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:14px;"><small>※ 本ページの実績数値・評価表記は目標・サンプル表示です。</small></p>
   </div>
 </section>
 
