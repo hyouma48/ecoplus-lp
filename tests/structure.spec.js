@@ -82,9 +82,10 @@ test.describe("HTML structure", () => {
     }
   });
 
-  test("S-011 ロゴ・マスコット参照", async ({ page }) => {
+  test("S-011 ロゴ参照", async ({ page }) => {
+    // 2026-04-29 マスコット削除の仕様変更により、マスコット参照は要件外。
+    // plan §9-A、TEST_SPEC.md S-011 参照。
     const html = await page.content();
     expect(html).toContain("assets/img/logo.");
-    expect(html).toContain("assets/img/mascot.");
   });
 });

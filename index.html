@@ -110,7 +110,17 @@
     </div>
 
     <div class="hero__visual">
-      <img src="assets/img/mascot.jpg" alt="エコプラス+のマスコットキャラクター（買取担当のパンダ）" class="hero__mascot" width="280" height="360" loading="eager" />
+      <div class="photo-frame" role="img" aria-label="買取スタッフが査定中の様子（写真は後日差し替え）">
+        <span class="photo-frame__icon" aria-hidden="true">📷</span>
+        <span class="photo-frame__hint">査定スタッフの写真<br />（差し替え予定）</span>
+      </div>
+      <span class="hero__no1" aria-hidden="true">
+        <span class="no1-badge">
+          <span class="no1-badge__sub">対応エリア</span>
+          <span class="no1-badge__strong">No<small>.</small>1</span>
+          <span class="no1-badge__sub">を目指します</span>
+        </span>
+      </span>
     </div>
   </div>
 </section>
@@ -162,6 +172,7 @@
 <section class="section section--gray" aria-label="お問い合わせ案内">
   <div class="container">
     <div class="cta-panel">
+      <span class="cta-panel__hours">9:00〜20:00／年中無休</span>
       <span class="cta-panel__title">お気軽にお問い合わせください</span>
       <p class="cta-panel__zero">出張費 <span class="num">0</span>円　査定費 <span class="num">0</span>円</p>
       <a class="cta-panel__phone" href="tel:0120000000" data-cta="phone" data-cta-location="mid">
@@ -183,8 +194,11 @@
 <section id="items" class="section section--yellow">
   <div class="container">
     <span class="section__title-eyebrow">BUYBACK ITEMS</span>
+    <p style="text-align:center; margin: 0 0 6px;">
+      <span class="total-badge">年間買取総額 <span class="strong">1億円</span> 以上を目指す<small>※</small></span>
+    </p>
     <h2 class="section__title">買取強化中の<span class="hl-yellow">アイテム</span></h2>
-    <p class="section__lead">下記以外もご相談ください。1点からでも、トラック1台分でも対応いたします。</p>
+    <p class="section__lead">下記以外もご相談ください。1点からでも、トラック1台分でも対応いたします。<br /><small>※ 目標値の表示です。</small></p>
     <ul class="items">
       <li class="items__item"><span class="items__icon" aria-hidden="true">📺</span>家電</li>
       <li class="items__item"><span class="items__icon" aria-hidden="true">🛋️</span>家具</li>
@@ -199,6 +213,39 @@
       <li class="items__item"><span class="items__icon" aria-hidden="true">🪑</span>骨董品</li>
       <li class="items__item"><span class="items__icon" aria-hidden="true">📦</span>その他</li>
     </ul>
+
+    <div style="text-align:center; margin: 32px 0 16px;">
+      <span class="handwrite">まさかの</span>
+      <h3 style="font-size: clamp(20px, 4.4vw, 26px); font-weight: 900; margin: 8px 0 0; color: var(--c-text);">
+        乗り物も<span class="hl-yellow" style="background: linear-gradient(transparent 60%, var(--c-yellow) 60%); padding: 0 4px;">買取査定</span>いたします！
+      </h3>
+    </div>
+
+    <div class="vehicles">
+      <div class="vehicle">
+        <div class="vehicle__circle" aria-label="自転車（写真は後日差し替え）">🚲</div>
+        <span class="vehicle__label">自転車</span>
+      </div>
+      <div class="vehicle vehicle--pink">
+        <div class="vehicle__circle" aria-label="バイク（写真は後日差し替え）">🏍️</div>
+        <span class="vehicle__label">バイク</span>
+      </div>
+      <div class="vehicle vehicle--green">
+        <div class="vehicle__circle" aria-label="自動車（写真は後日差し替え）">🚗</div>
+        <span class="vehicle__label">自動車</span>
+      </div>
+    </div>
+
+    <div style="margin-top: 36px;">
+      <div class="one-callout">
+        <span class="one-callout__quotes one-callout__quotes--left">＼ エコプラス+なら ／</span>
+        <p class="one-callout__main">
+          「何でも」「どんな状態でも」<br />
+          <span class="hl-yellow">1点</span>から<span class="pink">無料出張査定</span>
+        </p>
+        <p class="one-callout__sub">「査定額が一番高かった」と言っていただけるよう、ぎりぎりまで高値をご提示いたします。</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -257,6 +304,7 @@
 <section class="section section--gray" aria-label="お問い合わせ案内">
   <div class="container">
     <div class="cta-panel">
+      <span class="cta-panel__hours">9:00〜20:00／年中無休</span>
       <span class="cta-panel__title">無料査定はこちら</span>
       <p class="cta-panel__zero">キャンセル料も <span class="num">0</span>円</p>
       <a class="cta-panel__phone" href="tel:0120000000" data-cta="phone" data-cta-location="mid">
@@ -272,8 +320,9 @@
 <section id="staff" class="section section--yellow">
   <div class="container">
     <span class="section__title-eyebrow">OUR STAFF</span>
-    <h2 class="section__title">買取スタッフ<small class="section__title-note">※ サンプル表示</small></h2>
-    <p class="section__lead">家にお招きするから安心していただきたい。研修を経た自社スタッフが丁寧に査定いたします。</p>
+    <p style="text-align:center; margin: 0;"><span class="handwrite">家にお招きするから</span></p>
+    <h2 class="section__title">安心の<span class="accent-cyan">買取スタッフ</span><small class="section__title-note">※ サンプル表示</small></h2>
+    <p class="section__lead">研修を経た自社スタッフが、礼儀と丁寧さを大切に査定いたします。</p>
     <div class="staff">
       <article class="staff__card">
         <div class="staff__avatar" aria-hidden="true">🐼</div>
